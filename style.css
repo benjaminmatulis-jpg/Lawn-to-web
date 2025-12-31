@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #0f172a;
+    background: white;
+}
+.bg-gradient-to-br.from-primary-600.to-primary-800 {
+    background: linear-gradient(135deg, #16a34a, #166534);
+}
+.bg-white {
+    background: white;
+    color: #0f172a;
+}
+.bg-\[#ebf4ec\] {
+    background-color: #ebf4ec;
+}
+/* Ensure text is white on dark backgrounds */
+.bg-primary-900,
+.bg-primary-700,
+.bg-primary-800,
+.bg-primary-900,
+.bg-secondary-800,
+.bg-secondary-900,
+.bg-secondary-700,
+.bg-\[#168e43\] {
+    color: white;
+    background: #168e43;
+}
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.bg-primary-900 a,
+.bg-primary-700 a,
+.bg-primary-800 a,
+.bg-primary-900 a,
+.bg-secondary-800 a,
+.bg-secondary-900 a,
+.bg-secondary-700 a {
+    color: white;
+    background: transparent;
+}
+.bg-primary-900 a:hover,
+.bg-primary-700 a:hover,
+.bg-primary-800 a:hover,
+.bg-primary-900 a:hover,
+.bg-secondary-800 a:hover,
+.bg-secondary-900 a:hover,
+.bg-secondary-700 a:hover {
+    color: #e2e8f0;
+    opacity: 0.9;
+    text-decoration: none;
+}
+:host {
+    background-color: white;
+    color: #0f172a;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 0;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+/* Text color for white background sections */
+.bg-white,
+.bg-primary-50,
+.bg-primary-100,
+.bg-primary-200,
+.bg-secondary-100,
+.bg-secondary-200,
+.bg-secondary-50 {
+    color: #0f172a;
+}
+
+.bg-white a,
+.bg-primary-50 a,
+.bg-primary-100 a,
+.bg-primary-200 a,
+.bg-secondary-100 a,
+.bg-secondary-200 a,
+.bg-secondary-50 a {
+    color: #0f172a;
+}
+.bg-white a:hover,
+.bg-primary-50 a:hover,
+.bg-primary-100 a:hover,
+.bg-primary-200 a:hover,
+.bg-secondary-100 a:hover,
+.bg-secondary-200 a:hover,
+.bg-secondary-50 a:hover {
+    /* No color change */
+}
+/* Button styles */
+.hovered-element {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Default button styles for light backgrounds */
+.hovered-element {
+    background-color: #22c55e;
+    color: white;
+}
+
+/* Button styles for dark backgrounds */
+.bg-primary-900 .hovered-element,
+.bg-primary-700 .hovered-element,
+.bg-primary-800 .hovered-element,
+.bg-primary-900 .hovered-element,
+.bg-secondary-800 .hovered-element,
+.bg-secondary-900 .hovered-element,
+.bg-secondary-700 .hovered-element,
+.bg-\[#168e43\] .hovered-element {
+    background-color: white;
+    color: #22c55e;
+}
+
+.hovered-element::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: currentColor;
+    border-radius: 16px;
+    z-index: -1;
+    opacity: 0.1;
+    transition: all 0.3s ease;
+}
+
+.hovered-element:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hovered-element:active {
+    transform: translateY(-1px);
+}
+
+.hovered-element:active::before {
+    opacity: 0.2;
+}
+.btn-primary {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+.btn-outline {
+    border: 2px solid currentColor;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Gradient underline for headings */
+.heading-underline {
+    position: relative;
+    display: inline-block;
+}
+.heading-underline:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #14532d, #166534);
+    border-radius: 2px;
+}
+/* Custom container */
+.container-lg {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section padding */
+.section-py {
+    padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+    .section-py {
+        padding: 3rem 0;
+    }
+}
+/* Button focus states */
+button:focus, 
+a:focus {
+    outline: 2px solid #22c55e;
+    outline-offset: 2px;
+}
+/* Special case for white background sections */
+.bg-white .hovered-element {
+    background-color: #22c55e;
+    color: white;
+}
+
+.bg-\[#ebf4ec\] .hovered-element {
+    background-color: #22c55e;
+    color: white;
+}
+/* Card hover effect */
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
