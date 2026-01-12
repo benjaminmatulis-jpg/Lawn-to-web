@@ -4,178 +4,410 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Matulis | Lawn Care Web Designer</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                50: '#f0fdf4',
-                100: '#dcfce7',
-                200: '#bbf7d0',
-                300: '#86efac',
-                400: '#4ade80',
-                500: '#22c55e',
-                600: '#16a34a',
-                700: '#15803d',
-                800: '#166534',
-                900: '#14532d',
-              },
-              secondary: {
-                50: '#f8fafc',
-                100: '#f1f5f9',
-                200: '#e2e8f0',
-                300: '#cbd5e1',
-                400: '#94a3b8',
-                500: '#64748b',
-                600: '#475569',
-                700: '#334155',
-                800: '#1e293b',
-                900: '#0f172a',
-              }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        secondary: {
+                            700: '#334155',
+                            900: '#0f172a',
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     </script>
 </head>
-<body class="bg-primary-900 font-sans">
+
+<body class="text-white antialiased">
+
+<!-- Navbar -->
 <script src="components/navbar.js"></script>
-    <custom-navbar></custom-navbar>
-    <!-- Hero Section -->
-    <section class="py-20 px-4 bg-gradient-to-br from-primary-600 to-primary-800">
-<div class="max-w-4xl mx-auto text-center text-white">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Clean Websites for Lawn Care Businesses</h1>
-                <p class="text-xl md:text-2xl mb-8">I build websites that work because I know what it's like to run a lawn care business while trying to grow online.</p>
-<a href="/contact.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">Request a Free Consultation</a>
-</div>
-        </div>
-    </section>
-<!-- About Preview -->
-    <section class="py-16 px-4 max-w-4xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-lg shadow-lg hovered-element">
-<div class="md:w-1/3">
-                <img src="http://static.photos/outdoor/640x360/42" alt="Benjamin Matulis" class="rounded-lg shadow-md">
-            </div>
-            <div class="md:w-2/3">
-                <h2 class="text-3xl font-bold text-black mb-4">Hi, I'm Benjamin</h2>
-                <p class="text-lg text-black mb-4">I run a successful lawn care business and built my own website from scratch while managing clients, crews, and equipment.</p>
-                <p class="text-lg text-black">I know how hard it is to create an effective online presence while keeping your business running. That's why I help fellow lawn care professionals get websites that actually work.</p>
-            </div>
-</div>
-    </section>
-<!-- Services Overview -->
-    <section class="py-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white px-4">
-<div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-secondary-900 mb-12">How I Can Help</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-[#dcfce7] p-3 rounded-full mr-4">
-<i data-feather="layout" class="text-primary-600"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold">Website Design</h3>
-                    </div>
-                    <p class="text-secondary-700">Professional, mobile-friendly websites built specifically for lawn care businesses to attract and convert customers.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-primary-100 p-3 rounded-full mr-4">
-                            <i data-feather="refresh-cw" class="text-primary-600"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold">Website Redesign</h3>
-                    </div>
-                    <p class="text-secondary-700">Transform your outdated site into a modern, effective marketing tool that reflects your business quality.</p>
-                </div>
-</div>
-        </div>
-    </section>
-    <!-- Why Work With Me -->
-    <section class="py-16 px-4 max-w-4xl mx-auto">
-        <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-center text-secondary-900 mb-12">Why Choose Me</h2>
-            <div class="space-y-8">
-<div class="flex flex-col md:flex-row gap-6">
-                <div class="md:w-1/3">
-                    <h3 class="text-xl font-semibold text-black">Firsthand Experience</h3>
-</div>
-                <div class="md:w-2/3">
-                <p class="text-black">I'm not just a web designer. I run a lawn care business myself, so I understand exactly what information your customers need to see.</p>
-</div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="md:w-1/3">
-                    <h3 class="text-xl font-semibold text-black">Simple Process</h3>
-</div>
-                <div class="md:w-2/3">
-                    <p class="text-black">No confusing tech jargon. Just a straightforward process to get your site up and running without disrupting your business.</p>
-</div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="md:w-1/3">
-                    <h3 class="text-xl font-semibold text-black">Affordable Pricing</h3>
-</div>
-                <div class="md:w-2/3">
-                    <p class="text-black">As I build my portfolio, I'm offering reduced rates in exchange for feedback and testimonials.</p>
-</div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio Preview -->
-    <section class="py-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white px-4">
-<div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-secondary-900 mb-12">Demo Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                    <img src="http://static.photos/lawn/640x360/1" alt="Green Horizon Lawn Care" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Green Horizon Lawn Care</h3>
-                        <p class="text-secondary-700 mb-4">Clean, modern design with service areas, pricing examples, and easy contact options.</p>
-                    <a href="portfolio.html" class="inline-block bg-primary-100 text-primary-600 font-medium px-4 py-2 rounded-md hover:bg-primary-200 transition">View Details →</a>
-</div>
-                </div>
-<div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                    <img src="http://static.photos/lawn/640x360/2" alt="Lawn Care Demo" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Turf Masters Lawn Service</h3>
-                        <p class="text-secondary-700 mb-4">Service-focused layout with before/after gallery and seasonal service packages.</p>
-                        <a href="portfolio.html" class="inline-block bg-primary-100 text-primary-600 font-medium px-4 py-2 rounded-md hover:bg-primary-200 transition">View Project →</a>
-</div>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                    <a href="portfolio.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">See Full Portfolio</a>
-</div>
-</div>
-    </section>
-    <!-- Early Client Note -->
-    <section class="py-16 px-4 max-w-4xl mx-auto">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-<h2 class="text-2xl font-bold text-center text-secondary-900 mb-4">Special Offer for Early Clients</h2>
-                <p class="text-center text-secondary-700 mb-6">I'm currently taking on a small number of clients at reduced pricing while I build my portfolio and gather testimonials. This is a great opportunity to get professional web design at a fraction of the typical cost.</p>
-                <div class="text-center">
-                    <a href="contact.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">Get Started Today</a>
-</div>
-            </div>
-        </div>
-    </section>
-<!-- Final CTA -->
-    <section class="py-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white px-4">
-<div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready to Grow Your Lawn Care Business Online?</h2>
-            <p class="text-xl mb-8">Let's talk about how a professional website can help you attract more customers and spend less time explaining your services.</p>
-            <a href="contact.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">Get in Touch</a>
-</div>
-    </section>
+<custom-navbar></custom-navbar>
 
-    <script src="components/footer.js"></script>
-    <custom-footer></custom-footer>
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521731249732-43207bf4ab63?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
 
-    <script src="script.js"></script>
-    <script>feather.replace();</script>
+  <div class="absolute inset-0 "></div>
+
+  <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+    <!-- Bubble wrapper -->
+    <div class="inline-block bg-black bg-opacity-50 p-6 rounded-xl">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white">
+        Websites that actually bring
+        <span class="text-white">lawn care clients</span>
+      </h1>
+      <p class="text-lg md:text-2xl text-white mb-10">
+        I’ve run a lawn care business myself. I build websites that convert, not just look nice.
+      </p>
+      <a href="contact.html"
+         class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition">
+        Request a Free Consultation
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-24 text-gray-900" style="background-color: #E9D8A6;">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="bg-white rounded-3xl shadow-xl p-10 md:p-14">
+      
+      <div class="grid md:grid-cols-3 gap-10 items-center">
+        
+        <!-- Image -->
+        <div class="flex justify-center md:justify-start">
+          <div class="relative">
+            <img 
+              src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/proffessional pic1.jpg"
+              class="rounded-2xl shadow-lg w-44 md:w-52"
+              alt="Benjamin Matulis"
+            >
+            <!-- Accent ring -->
+            <div class="absolute -inset-2 border-2 border-green-600 rounded-2xl opacity-20"></div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="md:col-span-2 text-center md:text-left">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Hi, I’m Benjamin
+          </h2>
+
+          <p class="text-lg text-gray-800 leading-relaxed max-w-xl mx-auto md:mx-0">
+            I run a real lawn care business, not just websites. That means I know exactly what homeowners look for and what actually makes them call. I use that experience to build websites that bring real leads, not just traffic.
+          </p>
+
+          <!-- Small trust badge -->
+          <div class="mt-6 inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+            <i data-feather="check-circle" class="w-4 h-4"></i>
+            Lawn care owner • Web designer
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-24 bg-[#17a34a]">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">How I Help Lawn Care Businesses</h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="bg-white text-gray-900 p-8 rounded-2xl shadow-xl hover:scale-[1.02] transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <i data-feather="layout" class="text-primary-700"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Website Design</h3>
+                </div>
+                <p class="text-gray-700">
+                    Clean, modern, mobile-friendly websites built specifically for lawn care companies.
+                </p>
+            </div>
+
+            <div class="bg-white text-gray-900 p-8 rounded-2xl shadow-xl hover:scale-[1.02] transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <i data-feather="refresh-cw" class="text-primary-700"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Website Redesign</h3>
+                </div>
+                <p class="text-gray-700">
+                    Turn outdated websites into lead-generating assets that reflect your quality of work.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ✅ PROCESS (placed after Services, before Why Me) -->
+<section class="py-24 text-gray-900" style="background-color: #E9D8A6;">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-6">My Simple 4 Step Process</h2>
+        <p class="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-14">
+            Honesty, speed, affordability, and results. Here’s exactly how we go from first call to a live website.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="bg-white p-8 rounded-2xl shadow-xl">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <span class="text-primary-700 font-extrabold text-lg">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold">Free Consultation Call</h3>
+                </div>
+                <p class="text-gray-700">
+                    We talk about your services, your area, your goals, and what kind of clients you want.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-xl">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <span class="text-primary-700 font-extrabold text-lg">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold">Preview + Edits Call</h3>
+                </div>
+                <p class="text-gray-700">
+                    I show you a working preview of your website. We go page by page and I make the edits you want.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-xl">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <span class="text-primary-700 font-extrabold text-lg">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold">Confirmation + Payment</h3>
+                </div>
+                <p class="text-gray-700">
+                    Once you’re happy with the final version, you confirm and payment is made before transfer.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-xl">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <span class="text-primary-700 font-extrabold text-lg">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold">Transfer + Publish</h3>
+                </div>
+                <p class="text-gray-700">
+                    I transfer everything to your account and publish it live, so you fully own the website.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center mt-14">
+            <a href="contact.html"
+               class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition">
+                Book Your Free Consultation
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- WHY ME -->
+<section class="py-24 text-white" style="background-color: #17a34a;">
+  <div class="max-w-5xl mx-auto px-6">
+    
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Why Work With Me
+      </h2>
+      <p class="text-green-100 max-w-2xl mx-auto">
+        Real experience, simple process, and early-client pricing you won’t find elsewhere.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Card 1 (Animated Pricing Highlight) -->
+      <div class="pricing-card bg-green-800 p-8 rounded-2xl shadow-2xl text-white relative overflow-hidden hover:scale-[1.03] transition">
+        
+        <!-- Soft overlay -->
+        <div class="absolute inset-0 bg-black/10"></div>
+
+        <div class="relative">
+          <div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mb-5">
+            <i data-feather="dollar-sign" class="text-white"></i>
+          </div>
+
+          <h3 class="text-xl font-semibold mb-3">
+            Early-Client Pricing
+          </h3>
+          <p class="leading-relaxed text-green-100">
+            Because I’m still building my portfolio, I offer reduced rates to early clients.
+            <span class="font-semibold text-white">
+              You get a professional website for less
+            </span>
+            while I grow my brand.
+          </p>
+
+          <!-- Badge -->
+          <div class="mt-5 inline-block bg-white/20 px-4 py-2 rounded-full text-sm font-medium">
+            Limited-time offer
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl text-gray-900 ">
+        <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-5">
+          <i data-feather="briefcase" class="text-green-700"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">
+          Firsthand Industry Experience
+        </h3>
+        <p class="text-gray-700 leading-relaxed">
+          I’m not guessing. I run a lawn care business myself, so I know exactly what customers look for and what makes them call.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl text-gray-900 ">
+        <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-5">
+          <i data-feather="zap" class="text-green-700"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">
+          Simple & Straightforward
+        </h3>
+        <p class="text-gray-700 leading-relaxed">
+          No tech confusion, no endless revisions. Just a clean process that gets your site live fast and stress-free.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Animation -->
+<style>
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.pricing-card {
+  animation: floatCard 4s ease-in-out infinite;
+}
+</style>
+
+<section class="py-24" style="background-color: #E9D8A6;">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-black mb-4">
+        Demo Websites
+      </h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+        Real examples of high-converting lawn care websites I’ve built to generate leads and build trust.
+      </p>
+    </div>
+
+    <!-- Demo Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+
+      <!-- Card -->
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition">
+        <img 
+          src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/IronBlade%20Lawn%20Care%20Pic.png"
+          class="w-full h-52 object-cover"
+        >
+        <div class="p-6 text-gray-900">
+          <h3 class="text-xl font-semibold mb-2">IronBlade Lawn Care</h3>
+          <p class="text-gray-700 mb-4">
+            Clean service-focused layout with fast quote conversion.
+          </p>
+          <a 
+            href="https://ironblade.netlify.app/"
+            target="_blank"
+            class="text-primary-700 font-semibold hover:underline"
+          >
+            View Live Site →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition">
+        <img 
+          src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/BluePeak%20Demo%20pic%202.png"
+          class="w-full h-52 object-cover"
+        >
+        <div class="p-6 text-gray-900">
+          <h3 class="text-xl font-semibold mb-2">BluePeak Lawn Care</h3>
+          <p class="text-gray-700 mb-4">
+            Testimonial-driven layout with gallery and seasonal services.
+          </p>
+          <a 
+            href="https://bluepeakdemo.netlify.app"
+            target="_blank"
+            class="text-primary-700 font-semibold hover:underline"
+          >
+            View Live Site →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition">
+        <img 
+          src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/John%20lawn%20care%20pic.png"
+          class="w-full h-52 object-cover"
+        >
+        <div class="p-6 text-gray-900">
+          <h3 class="text-xl font-semibold mb-2">John’s Lawn Care</h3>
+          <p class="text-gray-700 mb-4">
+            Trust-focused design with a personalized contact experience.
+          </p>
+          <a 
+            href="https://johnlawncare.netlify.app/"
+            target="_blank"
+            class="text-primary-700 font-semibold hover:underline"
+          >
+            View Live Site →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Button -->
+    <div class="text-center">
+      <a 
+        href="portfolio.html"
+        class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-10 py-4 rounded-full shadow-xl transition"
+      >
+        View Full Portfolio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-24 text-center" style="background-color: #17a34a;">
+    <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6 text-white">Ready to Grow Your Lawn Care Business?</h2>
+        <p class="text-xl text-green-100 mb-10">
+            Let’s build a website that brings customers, not excuses.
+        </p>
+        <a href="contact.html"
+           class="inline-block !bg-green-800 hover:!bg-green-900 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition">
+            Request a Free Consultation
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<script src="components/footer.js"></script>
+<custom-footer></custom-footer>
+
+<script>
+    feather.replace();
+</script>
+
 </body>
 </html>

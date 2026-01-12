@@ -4,82 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Lawn to Web</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        secondary: {
+                            700: '#334155',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-[#168e43] font-sans">
+
+<body class="text-white antialiased">
+
+<!-- Navbar -->
 <script src="components/navbar.js"></script>
-    <custom-navbar></custom-navbar>
-    <section id="portfolio" class="py-20 px-4 max-w-6xl mx-auto">
-<div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4 bg-clip-text text-transparent text-white">Portfolio</h1>
-<p class="text-xl text-white">Examples of lawn care websites I've designed</p>
-</div>
+<custom-navbar></custom-navbar>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                <img src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/GreenEdge%20demo%20pic.png" alt="Green Horizon Lawn Care" class="w-full h-48 object-cover">
-<div class="p-6">
-<h3 class="text-xl font-semibold mb-2">Green Edge Lawn Care</h3>
-                    <p class="text-secondary-700 mb-4">Clean, modern design with service areas, a gallery section, and easy contact options.</p>
-                    <a href="https://greenedgedemo.netlify.app" target="_blank" class="inline-block bg-primary-100 text-primary-600 font-medium px-4 py-2 rounded-md hover:bg-primary-200 transition">View Live Site →</a>
-</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                <img src="http://static.photos/lawn/640x360/2" alt="Turf Masters Lawn Service" class="w-full h-48 object-cover">
-                <div class="p-6">
-<h3 class="text-xl font-semibold mb-2">Turf Masters Lawn Service</h3>
-                    <p class="text-secondary-700 mb-4">Service-focused layout with before/after gallery and seasonal service packages.</p>
-                    <a href="portfolio.html" class="inline-block bg-primary-100 text-primary-600 font-medium px-4 py-2 rounded-md hover:bg-primary-200 transition">View Live Site →</a>
-</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                <img src="http://static.photos/lawn/640x360/3" alt="Perfect Cut Lawn Care" class="w-full h-48 object-cover">
-                <div class="p-6">
-<h3 class="text-xl font-semibold mb-2">Perfect Cut Lawn Care</h3>
-                    <p class="text-secondary-700 mb-4">Simple one-page design highlighting core services and customer testimonials.</p>
-                    <a href="portfolio.html" class="text-primary-600 font-medium hover:text-primary-800">View Live Site →</a>
-</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                <img src="http://static.photos/lawn/640x360/4" alt="Elite Lawn Maintenance" class="w-full h-48 object-cover">
-                <div class="p-6">
-<h3 class="text-xl font-semibold mb-2">Elite Lawn Maintenance</h3>
-                    <p class="text-secondary-700 mb-4">Premium design with service calculator and online booking integration.</p>
-                    <a href="portfolio.html" class="text-primary-600 font-medium hover:text-primary-800">View Live Site →</a>
-</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                <img src="http://static.photos/lawn/640x360/5" alt="Neighborhood Lawn Pros" class="w-full h-48 object-cover">
-                <div class="p-6">
-<h3 class="text-xl font-semibold mb-2">Neighborhood Lawn Pros</h3>
-                    <p class="text-secondary-700 mb-4">Local-focused design with service area map and community involvement section.</p>
-                    <a href="portfolio.html" class="text-primary-600 font-medium hover:text-primary-800">View Live Site →</a>
-</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                <img src="http://static.photos/lawn/640x360/6" alt="Seasonal Lawn Care" class="w-full h-48 object-cover">
-                <div class="p-6">
-<h3 class="text-xl font-semibold mb-2">Seasonal Lawn Care</h3>
-                    <p class="text-secondary-700 mb-4">Year-round service showcase with seasonal service packages and maintenance plans.</p>
-                    <a href="portfolio.html" class="text-primary-600 font-medium hover:text-primary-800">View Live Site →</a>
-</div>
-            </div>
+<!-- HERO (same system as Home & Services) -->
+<section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521731249732-43207bf4ab63?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.1.0')] bg-cover bg-center"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+        <div class="inline-block bg-black bg-opacity-50 p-8 rounded-2xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+                Demo Website Portfolio
+            </h1>
+            <p class="text-lg md:text-2xl text-white">
+                Realistic lawn care website demos built to convert visitors into leads.
+            </p>
+            <p class="text-sm text-gray-200 mt-4">
+                *These websites are examples created to showcase design and functionality. Each is a demo, not a real business.
+            </p>
         </div>
-    </section>
-    <section class="py-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white px-4">
-<div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready for Your Own Professional Website?</h2>
-            <p class="text-xl mb-8">Get in touch to discuss how we can create a website that helps grow your lawn care business.</p>
-            <a href="contact.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">Get Started</a>
-</div>
-    </section>
+    </div>
+</section>
 
-    <script src="components/footer.js"></script>
-    <custom-footer></custom-footer>
+<!-- PORTFOLIO GRID -->
+<section class="py-24" style="background-color: #E9D8A6;">
+    <div class="max-w-6xl mx-auto px-6">
 
-    <script src="script.js"></script>
-    <script>feather.replace();</script>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Card -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.02] transition">
+                <img src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/IronBlade%20Lawn%20Care%20Pic.png"
+                     class="w-full h-52 object-cover">
+                <div class="p-6 text-gray-900">
+                    <h3 class="text-xl font-semibold mb-2">IronBlade Lawn Care</h3>
+                    <p class="text-gray-700 mb-4">
+                        Clean service-focused layout with fast quote conversion.
+                    </p>
+                    <a href="https://ironblade.netlify.app/"
+                       target="_blank"
+                       class="text-primary-700 font-semibold hover:underline">
+                        View Live Site →
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.02] transition">
+                <img src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/BluePeak%20Demo%20pic%202.png"
+class="w-full h-52 object-cover">
+                <div class="p-6 text-gray-900">
+                    <h3 class="text-xl font-semibold mb-2">BluePeak Lawn Care</h3>
+                    <p class="text-gray-700 mb-4">
+                        Testimonial-driven layout with gallery and seasonal services.
+                    </p>
+                    <a href="https://bluepeakdemo.netlify.app"
+                       target="_blank"
+                       class="text-primary-700 font-semibold hover:underline">
+                        View Live Site →
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.02] transition">
+                <img src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/John%20lawn%20care%20pic.png"
+                     class="w-full h-52 object-cover">
+                <div class="p-6 text-gray-900">
+                    <h3 class="text-xl font-semibold mb-2">John’s Lawn Care</h3>
+                    <p class="text-gray-700 mb-4">
+                        Trust-focused design with a personalized contact experience.
+                    </p>
+                    <a href="https://johnlawncare.netlify.app/"
+                       target="_blank"
+                       class="text-primary-700 font-semibold hover:underline">
+                        View Live Site →
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.02] transition">
+                <img src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/Fresh%20Cut%20Lawn%202%20pic.png"
+class="w-full h-52 object-cover">
+                <div class="p-6 text-gray-900">
+                    <h3 class="text-xl font-semibold mb-2">Fresh Cut Lawn Care</h3>
+                    <p class="text-gray-700 mb-4">
+                        Premium design with detailed gallery and custom estimate flow.
+                    </p>
+                    <a href="https://freshcutlawn.netlify.app"
+                       target="_blank"
+                       class="text-primary-700 font-semibold hover:underline">
+                        View Live Site →
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.02] transition">
+                <img src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/Clear%20Cut%20Crew%20Demo%20Pic.png"
+                     class="w-full h-52 object-cover">
+                <div class="p-6 text-gray-900">
+                    <h3 class="text-xl font-semibold mb-2">Clear Cut Crew</h3>
+                    <p class="text-gray-700 mb-4">
+                        Welcoming brand with strong About page and gallery focus.
+                    </p>
+                    <a href="https://clearcutcrew.netlify.app/"
+                       target="_blank"
+                       class="text-primary-700 font-semibold hover:underline">
+                        View Live Site →
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.02] transition">
+                <img src="https://huggingface.co/spaces/Matb3nj1/lawn-to-web-grassroots-websites-for-growth/resolve/main/images/GreenEdge%20demo%20pic%202.png"
+class="w-full h-52 object-cover">
+                <div class="p-6 text-gray-900">
+                    <h3 class="text-xl font-semibold mb-2">Green Edge Lawn Care</h3>
+                    <p class="text-gray-700 mb-4">
+                        Clean modern layout with FAQ section and simple contact flow.
+                    </p>
+                    <a href="https://greenedgedemo.netlify.app"
+                       target="_blank"
+                       class="text-primary-700 font-semibold hover:underline">
+                        View Live Site →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-24 text-center bg-[#17a34a]">
+    <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">
+            Ready for Your Own Website?
+        </h2>
+        <p class="text-xl text-green-100 mb-10">
+            Let’s build something that actually brings you customers.
+        </p>
+        <a href="contact.html"
+           class="inline-block !bg-green-800 hover:!bg-green-900 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition">
+            Get Started
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<script src="components/footer.js"></script>
+<custom-footer></custom-footer>
+
+<script>
+    feather.replace();
+</script>
+
 </body>
 </html>

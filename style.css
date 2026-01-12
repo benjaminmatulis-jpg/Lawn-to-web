@@ -6,7 +6,8 @@ body {
     background: white;
 }
 .bg-gradient-to-br.from-primary-600.to-primary-800 {
-    background: linear-gradient(135deg, #16a34a, #166534);
+    background: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat,
+                linear-gradient(135deg, rgba(22, 163, 74, 0.8), rgba(22, 101, 52, 0.8));
 }
 .bg-white {
     background: white;

@@ -8,12 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
-<body class="bg-primary-900 font-sans">
+<body class="bg-[#e9d8a6] font-sans">
+    <div class="absolute inset-0 bg-[#e9d8a6]"></div>
+<div class="relative z-10">
 <script src="components/navbar.js"></script>
     <custom-navbar></custom-navbar>
-    <section class="min-h-[70vh] flex items-center justify-center px-4 bg-gradient-to-br from-primary-600 to-primary-800">
+    <section class="min-h-[70vh] flex items-center justify-center px-4 bg-[#e9d8a6]">
 <div class="max-w-2xl mx-auto text-center bg-white p-8 rounded-lg shadow-lg">
-            <div class="bg-[#45cb6e] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="bg-[#dcfce7] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
 <i data-feather="check-circle" class="w-10 h-10 text-primary-600"></i>
             </div>
             <h1 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">Thank You!</h1>
@@ -35,5 +37,6 @@ Back to Home
 
     <script src="script.js"></script>
     <script>feather.replace();</script>
+    </div>
 </body>
 </html>

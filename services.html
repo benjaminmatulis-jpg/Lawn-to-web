@@ -4,118 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Lawn to Web</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        secondary: {
+                            700: '#334155',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-[#168e43] font-sans">
+
+<body class="text-white antialiased">
+
+<!-- Navbar -->
 <script src="components/navbar.js"></script>
-    <custom-navbar></custom-navbar>
-    <section class="py-20 px-4 max-w-4xl mx-auto bg-[#168e43]">
-<div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4 text-white">Services</h1>
-<p class="text-xl text-white">Custom solutions designed specifically for lawn care businesses</p>
-</div>
-        <div class="space-y-12">
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-<div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="md:w-1/3">
-                        <div class="bg-[#45cb6e] p-4 rounded-lg inline-block">
-<i data-feather="layout" class="w-12 h-12 text-primary-600"></i>
-                        </div>
-                    </div>
-                    <div class="md:w-2/3">
-                        <h2 class="text-2xl font-bold text-secondary-900 mb-4">Website Design</h2>
-                        <p class="text-secondary-700 mb-4">Get a professional, mobile-friendly website built specifically for your lawn care business to attract and convert more customers.</p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Custom design tailored to your business</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Mobile-responsive for all devices</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Essential pages (Home, Services, About, Contact)</span>
-                            </li>
-                        </ul>
-                        <a href="portfolio.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">See Examples</a>
-</div>
+<custom-navbar></custom-navbar>
+
+<!-- HERO -->
+<section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+  
+  <!-- Background image (same as Home) -->
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521731249732-43207bf4ab63?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+    
+    <!-- Dark bubble -->
+    <div class="inline-block bg-black bg-opacity-50 p-8 rounded-2xl">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-white">
+        Services Built for
+        <span class="text-white">Lawn Care Businesses</span>
+      </h1>
+
+      <p class="text-lg md:text-2xl text-white">
+        Simple, effective websites that turn visitors into real customers.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-24 text-gray-900" style="background-color: #E9D8A6;">
+    <div class="max-w-5xl mx-auto px-6 space-y-10">
+
+        <!-- Website Design -->
+        <div class="bg-white p-10 rounded-2xl shadow-xl hover:scale-[1.02] transition">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-green-100 p-4 rounded-full">
+                    <i data-feather="layout" class="text-primary-700 w-6 h-6"></i>
                 </div>
+                <h2 class="text-2xl font-bold">Website Design</h2>
             </div>
 
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="md:w-1/3">
-                        <div class="bg-[#45cb6e] p-4 rounded-lg inline-block">
-<i data-feather="refresh-cw" class="w-12 h-12 text-primary-600"></i>
-                        </div>
-                    </div>
-                    <div class="md:w-2/3">
-                        <h2 class="text-2xl font-bold text-secondary-900 mb-4">Website Redesign</h2>
-                        <p class="text-secondary-700 mb-4">Transform your outdated site into a modern, effective marketing tool that reflects your business quality.</p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Modern design update</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Improved user experience</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Content optimization</span>
-                            </li>
-                        </ul>
-                        <a href="contact.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">Get Started</a>
-</div>
-                </div>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-<div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="md:w-1/3">
-                        <div class="bg-[#45cb6e] p-4 rounded-lg inline-block">
-<i data-feather="upload-cloud" class="w-12 h-12 text-primary-600"></i>
-                        </div>
-                    </div>
-                    <div class="md:w-2/3">
-                        <h2 class="text-2xl font-bold text-secondary-900 mb-4">Website Publishing</h2>
-                        <p class="text-secondary-700 mb-4">I'll handle all the technical details to get your site live and connected to your domain.</p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Domain connection</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Hosting setup</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
-                                <span class="text-secondary-700">Basic security configuration</span>
-                            </li>
-                        </ul>
-                        <a href="contact.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">Get Started</a>
-</div>
-                </div>
-            </div>
+            <p class="text-lg text-gray-700 mb-6">
+                A clean, modern website designed specifically for lawn care businesses, built to convert visitors into leads.
+            </p>
+
+            <ul class="space-y-3 text-gray-700 mb-8">
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Custom design tailored to your business
+                </li>
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Mobile-friendly on all devices
+                </li>
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Home, Services, About & Contact pages
+                </li>
+            </ul>
+
+            <a href="portfolio.html"
+               class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition">
+                View Examples
+            </a>
         </div>
-    </section>
-    <section class="py-16 bg-[#168e43] text-white px-4">
-<div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Not Sure What You Need?</h2>
-            <p class="text-xl mb-8">Schedule a free consultation to discuss the best solution for your lawn care business.</p>
-            <a href="contact.html" class="inline-block bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-600 transition duration-300 shadow-md hovered-element">Request Consultation</a>
-</div>
-    </section>
 
-    <script src="components/footer.js"></script>
-    <custom-footer></custom-footer>
+        <!-- Website Redesign -->
+        <div class="bg-white p-10 rounded-2xl shadow-xl hover:scale-[1.02] transition">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-green-100 p-4 rounded-full">
+                    <i data-feather="refresh-cw" class="text-primary-700 w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Website Redesign</h2>
+            </div>
 
-    <script src="script.js"></script>
-    <script>feather.replace();</script>
+            <p class="text-lg text-gray-700 mb-6">
+                Turn an outdated or underperforming site into a modern, professional lead-generating asset.
+            </p>
+
+            <ul class="space-y-3 text-gray-700 mb-8">
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Modern visual upgrade
+                </li>
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Improved user experience
+                </li>
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Clear calls-to-action
+                </li>
+            </ul>
+
+            <a href="contact.html"
+               class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition">
+                Get Started
+            </a>
+        </div>
+
+        <!-- Publishing -->
+        <div class="bg-white p-10 rounded-2xl shadow-xl hover:scale-[1.02] transition">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-green-100 p-4 rounded-full">
+                    <i data-feather="upload-cloud" class="text-primary-700 w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Website Publishing</h2>
+            </div>
+
+            <p class="text-lg text-gray-700 mb-6">
+                I handle all the technical setup so your website goes live smoothly and correctly.
+            </p>
+
+            <ul class="space-y-3 text-gray-700 mb-8">
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Domain connection
+                </li>
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Hosting setup
+                </li>
+                <li class="flex items-start gap-2">
+                    <i data-feather="check" class="text-primary-700 mt-1"></i>
+                    Basic security configuration
+                </li>
+            </ul>
+
+            <a href="contact.html"
+               class="inline-block bg-[#17a34a] hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition">
+                Get Started
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-24 text-center bg-[#17a34a]">
+    <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">
+            Not Sure What You Need?
+        </h2>
+        <p class="text-xl text-green-100 mb-10">
+            Schedule a free consultation and we’ll figure out the best approach together.
+        </p>
+        <a href="contact.html"
+           class="inline-block !bg-green-800 hover:!bg-green-900 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition">
+            Request a Free Consultation
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<script src="components/footer.js"></script>
+<custom-footer></custom-footer>
+
+<script>
+    feather.replace();
+</script>
+
 </body>
 </html>
